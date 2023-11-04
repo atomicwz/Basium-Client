@@ -32,7 +32,6 @@ const CardProduct: React.FC<IProps> = ({ product, onClick }) => {
                 }}
                 src={product.image[0]}
                 alt="camisa"
-                layout="responsive"
                 width={400}
                 height={400}
             />
