@@ -27,7 +27,7 @@ const novaColecaoM: IPart[] = [
             "/img/products/f3.jpg",
         ],
         tamanhos: ["P", "M"],
-        category: ["newCollection"],
+        category: [""],
         description:
             "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear.",
     },
@@ -42,7 +42,7 @@ const novaColecaoM: IPart[] = [
             "/img/products/f3.jpg",
         ],
         tamanhos: ["P", "M"],
-        category: ["newCollection"],
+        category: [""],
         description:
             "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear.",
     },
@@ -57,7 +57,7 @@ const novaColecaoM: IPart[] = [
             "/img/products/f3.jpg",
         ],
         tamanhos: ["P", "M"],
-        category: ["newCollection"],
+        category: [""],
         description:
             "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear.",
     },
@@ -72,7 +72,7 @@ const novaColecaoM: IPart[] = [
             "/img/products/f3.jpg",
         ],
         tamanhos: ["P", "M"],
-        category: ["newCollection"],
+        category: [""],
         description:
             "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear.",
     },

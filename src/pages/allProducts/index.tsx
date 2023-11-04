@@ -1,15 +1,16 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useRef } from "react";
 import { NextPage } from "next";
-import { Flex, Heading, Center, Text, Image, Grid } from "@chakra-ui/react";
-import MainLayout from "@/layout/MainLayout";
-import { IPart, category } from "@/resources/products/masculino/camisas";
-import CardProduct from "@/components/CardProduct";
 import { useRouter } from "next/router";
+import { Flex, Heading, Center, Text, Grid } from "@chakra-ui/react";
+import MainLayout from "@/layout/MainLayout";
+import { IPart } from "@/resources/products/masculino/camisas";
+import CardProduct from "@/components/CardProduct";
 import Pagination from "@/components/Pagination";
 import { useCheckSexSelected } from "@/context";
 import { masculineProducts } from "@/resources/products/masculino";
 import { feminineProducts } from "@/resources/products/feminino";
+import { category } from "@/resources/products/categorias";
 
 const AllProducts: NextPage = () => {
     const { sexSelected } = useCheckSexSelected();
@@ -107,103 +108,134 @@ const AllProducts: NextPage = () => {
                     pt={4}
                     gap={5}
                 >
-                    <Image
-                        _hover={{
-                            boxShadow:
-                                "0px 0px 38px 5px rgba(70, 62, 221, 0.1)",
-                        }}
-                        transition=".3s"
-                        w={{ base: 36, md: 40 }}
-                        src="icone_blusassociais.svg"
+                    <Text
+                        color={
+                            sexSelected === "masculine"
+                                ? "white"
+                                : "secondary.800"
+                        }
+                        fontWeight="bold"
                         onClick={() => setSearch("Blusas Sociais")}
-                        alt="Camisas"
+                        transition=".2s"
                         cursor="pointer"
-                    />
-                    <Image
                         _hover={{
-                            boxShadow:
-                                "0px 0px 38px 5px rgba(70, 62, 221, 0.1)",
+                            opacity: 0.6,
                         }}
-                        transition=".3s"
-                        w={{ base: 36, md: 40 }}
-                        src="icone_calçasjeans.svg"
+                    >
+                        Blusas Sociais
+                    </Text>
+                    <Text
+                        color={
+                            sexSelected === "masculine"
+                                ? "white"
+                                : "secondary.800"
+                        }
+                        fontWeight="bold"
                         onClick={() => setSearch("Calças Jeans")}
-                        alt="Camisas"
+                        transition=".2s"
                         cursor="pointer"
-                    />
-                    <Image
                         _hover={{
-                            boxShadow:
-                                "0px 0px 38px 5px rgba(70, 62, 221, 0.1)",
+                            opacity: 0.6,
                         }}
-                        transition=".3s"
-                        w={{ base: 36, md: 40 }}
+                    >
+                        Calças Jeans
+                    </Text>
+                    <Text
+                        color={
+                            sexSelected === "masculine"
+                                ? "white"
+                                : "secondary.800"
+                        }
+                        fontWeight="bold"
                         onClick={() => setSearch("T-Shirts")}
-                        src="icone_tshirts.svg"
-                        alt="Camisas"
+                        transition=".2s"
                         cursor="pointer"
-                    />
-                    <Image
                         _hover={{
-                            boxShadow:
-                                "0px 0px 38px 5px rgba(70, 62, 221, 0.1)",
+                            opacity: 0.6,
                         }}
-                        transition=".3s"
-                        w={{ base: 36, md: 40 }}
-                        src="icone_blazer.svg"
+                    >
+                        T-Shirts
+                    </Text>
+                    <Text
+                        color={
+                            sexSelected === "masculine"
+                                ? "white"
+                                : "secondary.800"
+                        }
+                        fontWeight="bold"
                         onClick={() => setSearch("Blazer")}
-                        alt="Camisas"
+                        transition=".2s"
                         cursor="pointer"
-                    />
-                    <Image
                         _hover={{
-                            boxShadow:
-                                "0px 0px 38px 5px rgba(70, 62, 221, 0.1)",
+                            opacity: 0.6,
                         }}
-                        transition=".3s"
-                        w={{ base: 36, md: 40 }}
-                        src="icone_calçasalfaiataria.svg"
+                    >
+                        Blazer
+                    </Text>
+                    <Text
+                        color={
+                            sexSelected === "masculine"
+                                ? "white"
+                                : "secondary.800"
+                        }
+                        fontWeight="bold"
                         onClick={() => setSearch("Calças Alfaiataria")}
-                        alt="Camisas"
+                        transition=".2s"
                         cursor="pointer"
-                    />
-                    <Image
                         _hover={{
-                            boxShadow:
-                                "0px 0px 38px 5px rgba(70, 62, 221, 0.1)",
+                            opacity: 0.6,
                         }}
-                        transition=".3s"
-                        w={{ base: 36, md: 40 }}
-                        src="icone_bermudas.svg"
+                    >
+                        Calças Alfaiataria
+                    </Text>
+                    <Text
+                        color={
+                            sexSelected === "masculine"
+                                ? "white"
+                                : "secondary.800"
+                        }
+                        fontWeight="bold"
                         onClick={() => setSearch("Bermudas")}
-                        alt="Camisas"
+                        transition=".2s"
                         cursor="pointer"
-                    />
-                    <Image
                         _hover={{
-                            boxShadow:
-                                "0px 0px 38px 5px rgba(70, 62, 221, 0.1)",
+                            opacity: 0.6,
                         }}
-                        transition=".3s"
-                        w={{ base: 36, md: 40 }}
-                        src="icone_calcados2.svg"
+                    >
+                        Bermudas
+                    </Text>
+                    <Text
+                        color={
+                            sexSelected === "masculine"
+                                ? "white"
+                                : "secondary.800"
+                        }
+                        fontWeight="bold"
                         onClick={() => setSearch("Calçados")}
-                        alt="Camisas"
+                        transition=".2s"
                         cursor="pointer"
-                    />
-                    <Image
                         _hover={{
-                            boxShadow:
-                                "0px 0px 38px 5px rgba(70, 62, 221, 0.1)",
+                            opacity: 0.6,
                         }}
-                        transition=".3s"
-                        w={{ base: 36, md: 40 }}
-                        src="icone_acessorios.svg"
+                    >
+                        Calçados
+                    </Text>
+                    <Text
+                        color={
+                            sexSelected === "masculine"
+                                ? "white"
+                                : "secondary.800"
+                        }
+                        fontWeight="bold"
                         onClick={() => setSearch("Acessórios")}
-                        alt="Camisas"
+                        transition=".2s"
                         cursor="pointer"
-                        ref={ref}
-                    />
+                        _hover={{
+                            opacity: 0.6,
+                        }}
+                    >
+                        Acessórios
+                    </Text>
                 </Flex>
                 <Grid
                     w={{ base: "95%", md: "85%" }}

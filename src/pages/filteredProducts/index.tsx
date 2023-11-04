@@ -10,13 +10,14 @@ import Pagination from "@/components/Pagination";
 import { useCheckSexSelected } from "@/context";
 import { masculineProducts } from "@/resources/products/masculino";
 import { feminineProducts } from "@/resources/products/feminino";
+import { category } from "@/resources/products/categorias";
 
 const FilteredProducts: NextPage = () => {
     const { sexSelected } = useCheckSexSelected();
     const [allProduct, setAllProduct] = React.useState<IPart[]>([]);
     const [page, setPage] = React.useState(1);
     const itemPerPage = 8;
-    const [search, setSearch] = React.useState<string>("");
+    const [search, setSearch] = React.useState<category>("");
     const ref = useRef<HTMLImageElement | null>(null);
     const router = useRouter();
 
@@ -24,7 +25,7 @@ const FilteredProducts: NextPage = () => {
         sexSelected === "masculine" ? masculineProducts : feminineProducts;
 
     React.useEffect(() => {
-        setSearch(localStorage.getItem("category") as string);
+        setSearch(localStorage.getItem("category") as category);
         const items: IPart[] = [];
         typeOfProducts.map((item) => items.push(...item));
         setAllProduct(items);

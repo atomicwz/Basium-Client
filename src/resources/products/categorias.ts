@@ -11,4 +11,5 @@ export type category =
     | "Moda Corporativa"
     | "Livros"
     | "Camisas"
-    | "Nova colecao";
+    | "Nova colecao"
+    | "";

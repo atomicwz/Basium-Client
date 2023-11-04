@@ -10,7 +10,7 @@ interface IProps {
     prev: () => void;
     next: () => void;
     page: number;
-    disableNextButton: boolean;
+    disableNextButton?: boolean;
 }
 
 const Pagination: React.FC<IProps> = ({

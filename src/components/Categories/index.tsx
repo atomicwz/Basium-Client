@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { useCheckSexSelected } from "@/context";
 import { useRouter } from "next/router";
-import { category } from "@/resources/products/masculino/camisas";
+import { category } from "@/resources/products/categorias";
 
 const Categories: React.FC = () => {
     const { sexSelected } = useCheckSexSelected();
