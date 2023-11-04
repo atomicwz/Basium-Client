@@ -12,7 +12,7 @@ const calcaAlfaiataria: IPart[] = [
             "/img/products/f3.jpg",
         ],
         tamanhos: ["38", "39", "80"],
-        category: ["Calça Alfaiataria", "Moda Casual", "Roupa"],
+        category: ["Moda Casual"],
         description:
             "The Gildan Ultra Cotton T-shirt is made fromrovides unmatched comfort with each wear.",
     },

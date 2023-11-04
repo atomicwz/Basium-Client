@@ -12,7 +12,7 @@ const novaColecaoF: IPart[] = [
             "/img/products/f3.jpg",
         ],
         tamanhos: ["P", "M"],
-        category: ["newCollection"],
+        category: ["Nova colecao"],
         description:
             "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 200% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear.",
     },

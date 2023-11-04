@@ -12,7 +12,7 @@ const sapatos: IPart[] = [
             "/img/products/f3.jpg",
         ],
         tamanhos: ["38", "39", "40"],
-        category: ["Calçados", "Nike"],
+        category: ["Calçados"],
         description:
             "The Gildan Ultra Cotton T-shirt is made fromrovides unmatched comfort with each wear.",
     },

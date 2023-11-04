@@ -1,3 +1,5 @@
+import { category } from "../categorias";
+
 export interface IPart {
     nome: string;
     id: number;
@@ -7,21 +9,8 @@ export interface IPart {
     cores?: string[] | null;
     description: string;
     tamanhos: string[];
-    category: string[];
+    category: category[];
 }
-
-export type category =
-    | "Acessórios"
-    | "Calçados"
-    | "Bermudas"
-    | "Calças Alfaiataria"
-    | "Blazer"
-    | "T-Shirts"
-    | "Calças Jeans"
-    | "Blusas Sociais"
-    | "Moda Casual"
-    | "Moda Corporativa"
-    | "Livros";
 
 const Camisas: IPart[] = [
     {

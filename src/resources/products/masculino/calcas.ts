@@ -12,7 +12,7 @@ const calcas: IPart[] = [
             "/img/products/f3.jpg",
         ],
         tamanhos: ["38", "39", "40"],
-        category: ["Calça Alfaiataria", "C", "Roupa"],
+        category: ["Calças Jeans"],
         description:
             "The Gildan Ultra Cotton T-shirt is made fromrovides unmatched comfort with each wear.",
     },

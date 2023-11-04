@@ -10,9 +10,15 @@ interface IProps {
     prev: () => void;
     next: () => void;
     page: number;
+    disableNextButton: boolean;
 }
 
-const Pagination: React.FC<IProps> = ({ prev, next, page }) => {
+const Pagination: React.FC<IProps> = ({
+    prev,
+    next,
+    page,
+    disableNextButton,
+}) => {
     const { sexSelected } = useCheckSexSelected();
     return (
         <Flex gap={3} justifyContent="center" alignItems="center" my={10}>
@@ -35,6 +41,7 @@ const Pagination: React.FC<IProps> = ({ prev, next, page }) => {
                 {page}
             </Text>
             <Button
+                isDisabled={disableNextButton}
                 bg="transparent"
                 onClick={next}
                 color={sexSelected === "masculine" ? "white" : "primary.400"}

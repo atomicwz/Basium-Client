@@ -1,15 +1,5 @@
 import { IPart } from "../masculino/camisas";
 
-export type category =
-    | "Acessórios"
-    | "Calçados"
-    | "Bermudas"
-    | "Calças Alfaiataria"
-    | "Blazer"
-    | "T-Shirts"
-    | "Calças Jeans"
-    | "Blusas Sociais";
-
 const Camisas: IPart[] = [
     {
         id: 20001,
